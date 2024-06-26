@@ -3,6 +3,7 @@ import PostComment from '..';
 import Comment from '../../../models/Comment';
 
 describe('Teste para o componente PostComment', () => {
+    
     test('Deve renderizar o componente corretamente', () => {
         render(<PostComment />);
         expect(screen.getByText('Comentar')).toBeInTheDocument();
